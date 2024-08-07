@@ -27,6 +27,8 @@ export default function CustomBarChart() {
   return (
     <div style={{ width: "100%" }}>
       <BarChart
+        borderRadius={10}
+        colors={["#7194fd"]}
         dataset={dataset}
         xAxis={[
           {
@@ -34,7 +36,6 @@ export default function CustomBarChart() {
             dataKey: "month",
             tickPlacement,
             tickLabelPlacement,
-        
           },
         ]}
         {...chartSetting}
