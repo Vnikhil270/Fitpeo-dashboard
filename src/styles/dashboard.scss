@@ -1,0 +1,23 @@
+.Dashboard {
+  .main {
+    .MuiGrid-container {
+      height: 100%;
+    }
+    .main-grid {
+      height: 100vh;
+      overflow: scroll;
+    }
+   
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .Dashboard {
+    .main {
+      .sidebar-grid {
+        display: none;
+      }
+    
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.main-container {
+  margin: 0;
+  padding: 0 !important;
+}
+.main-dashboard {
+  padding: 30px;
+  h2 {
+    color: #fff;
+  }
+  .section1 {
+    .grid1 {
+      .grid-item {
+        .order-info-box {
+          background: #1f2028;
+          padding: 20px;
+          border-radius: 5px;
+          color: #fff;
+          .logo-box,
+          .footer-box {
+            display: flex;
+            align-items: center;
+          }
+          .logo-box {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 10px;
+            justify-content: center;
+
+            svg {
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+          p {
+            font-size: 14px;
+            margin-top: 10px;
+          }
+          .footer-box {
+            justify-content: space-between;
+            h1 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .grid2 {
+      .profit-block {
+        background: #1f2028;
+        padding: 20px;
+        border-radius: 5px;
+        .stats-box {
+          color: #fff;
+          gap: 15px;
+          flex-direction: column;
+          .title {
+            font-size: 12px;
+          }
+          .stats {
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 500;
+          }
+          .revenue {
+            font-size: 13px;
+            color: green;
+          }
+        }
+        .gauge-chart {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          .MuiGauge-valueText {
+            text {
+              fill: #fff;
+            }
+          }
+        }
+      }
+      .profit-block,
+      .stats-box,
+      .gauge-chart {
+        display: flex;
+      }
+    }
+  }
+  .section2 {
+    .grid3 {
+      .bar-charts {
+        svg {
+          text {
+            fill: gray !important;
+          }
+          .MuiChartsAxis-line {
+            stroke: gray;
+          }
+          .MuiChartsAxisHighlisght-root {
+            fill: gray;
+            color: #1f2028;
+          }
+        }
+      }
+    }
+    .bar-charts,
+    .goals-box {
+      background: #1f2028;
+      border-radius: 5px;
+    }
+    .grid4 {
+      .goals-box {
+        padding: 20px;
+        .goal,
+        .box1,
+        .logo-box {
+          display: flex;
+          align-items: center;
+        }
+        .box1 {
+          gap: 20px;
+          .logo-box {
+            justify-content: center;
+            text-align: center;
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            padding: 10px;
+            svg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .logo-box1 {
+            background: #f05c5d;
+          }
+          .logo-box2 {
+            background-color: #4063fb;
+          }
+          .logo-box3 {
+            background-color: #155045;
+          }
+        }
+        .goal {
+          justify-content: space-between;
+          .action-logo {
+            svg {
+              transform: rotate(270deg);
+              color: gray;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section3 {
+    .grid5 {
+      .table-box {
+        background: #1f2028;
+        padding: 20px;
+        .MuiTableCell-body {
+          font-size: 13px;
+        }
+        .MuiTableCell-head {
+          font-weight: bold;
+          background: #1f2028;
+          font-size: 14px;
+        }
+        .MuiTableCell-root {
+          color: #fff;
+          border-bottom: 0.5px solid gray;
+        }
+        .MuiSelect-select,
+        .MuiSelect-icon,
+        .MuiIconButton-root {
+          color: #fff;
+        }
+      }
+    }
+    .grid6 {
+      .Reviews-box {
+        background: #1f2028;
+        padding: 20px;
+        overflow: scroll;
+        height: 510px;
+        .review-section {
+          .review {
+            .heading {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              p {
+                font-size: 16px;
+              }
+              svg {
+                width: 30px;
+                height: 30px;
+                color: #fff;
+              }
+            }
+            .feedback {
+              font-size: 12px;
+              color: gray;
+            }
+            .MuiRating-iconEmpty {
+              color: gray;
+            }
+          }
+          .MuiDivider-root {
+            margin: 15px 0px;
+            border: 0.5px solid gray;
+          }
+        }
+      }
+    }
+  }
+}
+.MuiPopper-root {
+  * {
+    color: #1f2028;
+  }
+}

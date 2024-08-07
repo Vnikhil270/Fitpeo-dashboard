@@ -1,0 +1,9 @@
+.App {
+  background: #000;
+  min-height: 100vh;
+}
+
+@import "./styles/dashboard.scss";
+@import "./styles/header.scss";
+@import "./styles/sidebar.scss";
+@import "./styles/main-dashboard.scss";
