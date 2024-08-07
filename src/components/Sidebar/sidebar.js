@@ -35,11 +35,14 @@ function Sidebar() {
     navigate(link);
   }
 
+  const path = window.location.pathname;
+  console.log(path)
+
   return (
     <div className="Sidebar">
         {navLinks.map((links) => {
           return (
-            <Box className="nav-box" onClick={()=>handleRedirect(links.redirect)}>
+            <Box className={`nav-box ${path===links.redirect?"selected-nav":""}`} onClick={()=>handleRedirect(links.redirect)}>
               <Tooltip title={links.title} placement="right">
                 {links.logo}
               </Tooltip>
